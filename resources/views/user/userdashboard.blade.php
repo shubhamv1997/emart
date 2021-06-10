@@ -11,19 +11,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //for-mobile-apps -->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="{{ asset('usertemplate/css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="all" />
+<link href="{{ asset('usertemplate/css/style.css') }}" rel="stylesheet" type="text/css" media="all" />
 <!-- font-awesome icons -->
-<link href="css/font-awesome.css" rel="stylesheet"> 
+<link href="{{ asset('usertemplate/css/font-awesome.css') }}" rel="stylesheet"> 
 <!-- //font-awesome icons -->
 <!-- js -->
-<script src="js/jquery-1.11.1.min.js"></script>
+<script src="{{ asset('usertemplate/js/jquery-1.11.1.min.js')}}"></script>
 <!-- //js -->
 <link href='//fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 <!-- start-smoth-scrolling -->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript" src="{{ asset('usertemplate/js/move-top.js') }}"></script>
+<script type="text/javascript" src="{{ asset('usertemplate/js/easing.js') }}"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
 		$(".scroll").click(function(event){		
@@ -70,7 +70,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</ul>
 			</div>
 			<div class="w3ls_logo_products_left">
-				<h1><a href="index.html">E-commerce</a></h1>
+				<h1><a href="index.html">E-Commerce</a></h1>
 			</div>
 		
 			
@@ -164,116 +164,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		
 <!-- //navigation -->
-<!-- breadcrumbs -->
-	<div class="breadcrumbs">
-		<div class="container">
-			<ol class="breadcrumb breadcrumb1 animated wow slideInLeft" data-wow-delay=".5s">
-				<li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
-				<li class="active">About</li>
-			</ol>
-		</div>
-	</div>
-<!-- //breadcrumbs -->
-<!-- about -->
-	<div class="about">
-		<div class="container">
-			<h3 class="w3_agile_header">About Us</h3>
-			<div class="about-agileinfo w3layouts">
-				<div class="col-md-8 about-wthree-grids grid-top">
-					<h4>E-Commerce Site for Fashion, Newly Lifestyle in the world. </h4>
-					<p class="top">This Site is one of the shopping site where users can buy all products regarding Mens,womens and kids also at very reasonable price.</p>
-					<p>Our Shopping site offers wide variety of Mens products like clothing, footwear,watches and many more.It also provides women's related products like Fashion Jewellery, Beauty, and clothes also.People can buy variety of products for their kids also. </p>		
-					<div class="about-w3agilerow">
-						<div class="col-md-4 about-w3imgs">
-							<img src="images/p2.jpg" alt="" class="img-responsive zoom-img"/>
-						</div>
-						<div class="col-md-4 about-w3imgs">
-							<img src="images/111.jpg" alt=""  class="img-responsive zoom-img"/>
-						</div>
-						<div class="col-md-4 about-w3imgs">
-							<img src="images/p2.png" alt=""  class="img-responsive zoom-img"/>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-				</div>
-				<div class="col-md-4 about-wthree-grids">
-					<div class="offic-time">
-						<div class="time-top">
-							<h4>Saving :</h4>
-						</div>
-						<div class="time-bottom">
-							<h5>Time Saving </h5>
-							<h5>Money Saving</h5>
-							
-						</div>
-					</div>
-					<div class="testi">
-						<h3 class="w3_agile_header">Testimonial</h3>
-						<!--//End-slider-script -->
-						<script src="js/responsiveslides.min.js"></script>
-						 <script>
-							// You can also use "$(window).load(function() {"
-							$(function () {
-							  // Slideshow 5
-							  $("#slider5").responsiveSlides({
-								auto: true,
-								pager: false,
-								nav: true,
-								speed: 500,
-								namespace: "callbacks",
-								before: function () {
-								  $('.events').append("<li>before event fired.</li>");
-								},
-								after: function () {
-								  $('.events').append("<li>after event fired.</li>");
-								}
-							  });
-						
-							});
-						  </script>
-						<div  id="top" class="callbacks_container">
-							<ul class="rslides" id="slider5">
-								<li>
-									<div class="testi-slider">
-										<h4>" I AM VERY HAPPY.</h4>
-										<p>I am Very happy to shopping watches from this site at very reasonable price.</p>
-										<div class="testi-subscript">
-											<p><a href="#">Ali</a></p>
-											<span class="w3-agilesub"> </span>
-										</div>	
-									</div>
-								</li>
-								<li>
-									<div class="testi-slider">
-										<h4>"AWESOME PRODUCTS.</h4>
-										<p>I like products very much.</p>
-										<div class="testi-subscript">
-											<p><a href="#">Shubham</a></p>
-											<span class="w3-agilesub"> </span>
-										</div>	
-									</div>
-								</li>
-								<li>
-									<div class="testi-slider">
-										<h4>"Good One.</h4>
-										<p>Product is suitable for kids.</p>
-										<div class="testi-subscript">
-											<p><a href="#">Rahul</p>
-											<span class="w3-agilesub"> </span>
-										</div>	
-									</div>
-								</li>
-							</ul>	
-						</div>
-					</div>
-				</div>	
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
-	<!-- //about -->
-
 	
+
+
+
+
+
+
+@yield('user')
+
+
 
 <!-- //footer -->
 <div class="footer">
@@ -328,9 +228,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		
 	</div>	
 	
-<!-- //footer -->		
+<!-- //footer -->	
 <!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
+<script src="{{ asset('usertemplate/js/bootstrap.min.js') }}"></script>
+
 <!-- top-header and slider -->
 <!-- here stars scrolling icon -->
 	<script type="text/javascript">
@@ -349,7 +250,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			});
 	</script>
 <!-- //here ends scrolling icon -->
-<script src="js/minicart.min.js"></script>
+<script src="{{ asset('usertemplate/js/minicart.min.js') }}"></script>
 <script>
 	// Mini Cart
 	paypal.minicart.render({
@@ -361,8 +262,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	}
 </script>
 <!-- main slider-banner -->
-<script src="js/skdslider.min.js"></script>
-<link href="css/skdslider.css" rel="stylesheet">
+<script src="{{ asset('usertemplate/js/skdslider.min.js') }}"></script>
+<link href="{{ asset('usertemplate/css/skdslider.css') }}" rel="stylesheet">
 <script type="text/javascript">
 		jQuery(document).ready(function(){
 			jQuery('#demo1').skdslider({'delay':5000, 'animationSpeed': 2000,'showNextPrev':true,'showPlayButton':true,'autoSlide':true,'animationType':'fading'});
